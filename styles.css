@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "LibreBaskerville","Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     height: 100%;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ h1 {
 a {
     display: block;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 1.5 */
 }
 
 a:hover {
@@ -92,4 +92,14 @@ a:hover {
         font-size: 1rem;
         padding: 0.5rem;
     }
+}
+
+@font-face {
+    font-family: King Basil;
+    src: url("/static/font/King-Basil.41221e7e.ttf")
+}
+
+@font-face {
+    font-family: LibreBaskerville;
+    src: url("/static/font/LibreBaskerville-Regular.27b9efe7.ttf")
 }
