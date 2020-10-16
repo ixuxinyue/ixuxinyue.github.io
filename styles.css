@@ -34,8 +34,8 @@ a:hover {
 
 .grid {
     display: grid;
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     padding: 0.2rem;
     background-color: #d90368;
     grid-template-columns: repeat(3, 1fr);
@@ -102,4 +102,40 @@ a:hover {
 @font-face {
     font-family: LibreBaskerville;
     src: url("/static/font/LibreBaskerville-Regular.27b9efe7.ttf")
+}
+
+.Jump-sc-1hijyzp-0 :hover{
+    animation: jump 0.3s forwards;
+    transform-origin: center;
+    transition: all ease;
+}
+
+@keyframes jump {
+	20% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: scale(1.2) rotate(10deg);
+	}
+
+	80% {
+		transform: scale(1.2) rotate(-10deg);
+	}
+
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+.icon-list{
+    display: inline-block;
+    text-align: center;
+}
+
+.icon-list a{
+    /* display: inline-block; */
+    width: 18%;
+    font-size: 14px;
+    float: left;
 }
