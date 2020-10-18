@@ -92,6 +92,9 @@ a:hover {
         font-size: 1rem;
         padding: 0.5rem;
     }
+    .icon-list p{
+        display: none;
+    }
 }
 
 @font-face {
@@ -138,4 +141,8 @@ a:hover {
     width: 18%;
     font-size: 14px;
     float: left;
+}
+
+.icon-list p{
+    margin: 0;
 }
