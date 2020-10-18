@@ -95,6 +95,16 @@ a:hover {
     .icon-list p{
         display: none;
     }
+    .icon-list svg{
+        width: 25px;
+        height: 25px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .title{
+        display: none;
+    }
 }
 
 @font-face {
@@ -141,6 +151,7 @@ a:hover {
     width: 18%;
     font-size: 14px;
     float: left;
+    margin: 0.25rem;
 }
 
 .icon-list p{
