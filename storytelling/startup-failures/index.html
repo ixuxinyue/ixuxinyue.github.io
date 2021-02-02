@@ -68,11 +68,12 @@
 
 		.step {
 			margin: 0 auto 2rem auto;
-			text-align:justify;
+			text-align: justify;
 			/* color: #fff; */
 		}
+
 		.step p {
-			text-align:justify;
+			text-align: justify;
 		}
 
 		.step:last-child {
@@ -118,17 +119,26 @@
 					<div style="position: absolute;top: 50%;transform: translateY(-47%);">
 						<div class="bar-race" style="display:none;margin:0 auto;max-width:650px;">
 							<!-- <div class="flourish-embed" data-src="visualisation/1112101"></div> -->
-
-							<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/5132143"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+							<div class="bar-intro">
+								<p style="font-size: 14px;line-height: 24px;">The bar chart race shows the ranking of
+									industries according to the number of startup failures from 2010 to 2020.</p>
+							</div>
+							<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/5132143">
+								<script src="https://public.flourish.studio/resources/embed.js"></script>
+							</div>
 							<div class="bar-intro">
 								<p style="font-size: 8px;"><img
 										style="width:16px;height:16px;top: 2px;position: relative" src="img/alert2.png">
-										Drag the arrow on the timeline to explore the number of companies closing down in various industries each year.</p>
+									Drag the arrow on the timeline to explore the number of companies closing down in
+									various industries.</p>
 								<br>
 								<div class="bar-insight"
 									style="font-size:13px;border:1px dotted #d3d3d3;padding:12px;line-height:25px">
 									<p class="ghost" style="position: relative">
-										Between 2013 and 2016, the industries that ranked first and second in number of bankruptcies switched to e-commerce and corporate services respectively. By 2020, the financial industry has directly jumped to No.1, becoming the industry with the largest number of bankruptcies.
+										From 2013 to 2016, the industries that ranked first and second switched between
+										e-commerce and enterprise services respectively according to the number of
+										bankruptcies. By 2020, the financial industry has directly jumped to No.1,
+										becoming the industry with the largest number of bankruptcies.
 									</p>
 									<!-- <p class="ghost" style="margin-top:10px;position: relative">
 										观察右下角的Total数据，可以发现在2017年，年度死亡公司数量达到了近十年来的顶峰。从2017年至今，死亡公司数量呈下降趋势。但是这与近三年新增公司数量逐年降低有关。
@@ -215,21 +225,28 @@
 
 				<div class='step' data-step='2'>
 					<div class="panel">Countless startups fail every year, so why do they fail?</div>
-					<div class="panel" style="margin-top:500px">The reasons for failures are divided into 6 categories, which are sorted by the number of startup failures. <span
-							class="background1"><i>Market Positioning</i></span> / <span class="background2"><i>External Issues </i></span> / <span
-							class="background3"><i>Financing Problems </i></span> / <span class="background4"><i>Product Issues </i></span> / <span
-							class="background5"><i>Operational Issues </i></span> / <span class="background6"><i>Team Issues </i></span>.</div>
+					<div class="panel" style="margin-top:500px">The reasons for failures are divided into 6 categories,
+						which are sorted by the number of startup failures. <span class="background1"><i>Market
+								Positioning</i></span> / <span class="background2"><i>External Issues </i></span> /
+						<span class="background3"><i>Financing Problems </i></span> / <span
+							class="background4"><i>Product Issues </i></span> / <span class="background5"><i>Operational
+								Issues </i></span> / <span class="background6"><i>Team Issues </i></span>.</div>
 				</div>
 				<div class='step' data-step='4'>
 					<div class="panel">
 						These 6 categories can be subdivided into 20 sub-categories: <br>
 						<ul style="font-size: smaller;">
-							<li id="li-1" style="list-style-type:none;">Business Model Not Viable / No Market Need/Business Adjustment / Lack of Focus</li>
-							<li id="li-2" style="list-style-type:none;">Get Outcompeted / Supervision / Legal Challenges</li>
-							<li id="li-3" style="list-style-type:none;">Run Out of Cash / Lacked Financing / Born Out</li>
+							<li id="li-1" style="list-style-type:none;">Business Model Not Viable / No Market
+								Need/Business Adjustment / Lack of Focus</li>
+							<li id="li-2" style="list-style-type:none;">Get Outcompeted / Supervision / Legal Challenges
+							</li>
+							<li id="li-3" style="list-style-type:none;">Run Out of Cash / Lacked Financing / Born Out
+							</li>
 							<li id="li-4" style="list-style-type:none;">Bad Timing / Poor Product</li>
-							<li id="li-5" style="list-style-type:none;">Pricing / Cost Issues / Poor Marketing / Pivot Gone Wrong / Ignored Customers</li>
-							<li id="li-6" style="list-style-type:none;">Founder Issues / Lack of team ability / Lack of Passion / Disharmony on Investors</li>
+							<li id="li-5" style="list-style-type:none;">Pricing / Cost Issues / Poor Marketing / Pivot
+								Gone Wrong / Ignored Customers</li>
+							<li id="li-6" style="list-style-type:none;">Founder Issues / Lack of team ability / Lack of
+								Passion / Disharmony on Investors</li>
 						</ul>
 
 						<!-- “商业模式匮乏”、“市场伪需求”、“业务调整”、“业务过于分散”、“现金流断裂”、“融资能力不足”、“烧钱”、“行业竞争”、“政策监管”、“法律法规风险”、“产品入场时机”、“产品缺陷严重”、“定价/成本问题”、“营销不足”、“转型问题”、“不重视客户”、“创始人问题”、“团队能力不足”、“团队缺乏激情”、“与投资人冲突”。 -->
@@ -237,26 +254,44 @@
 				</div>
 				<div class='step' data-step='5'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px"><b>Business Model Not Viable - the "number one culprit" of numerous company failures</b></h3>
-						Among the causes of company failures in most industries, the most common cause of failures is "lack of business model". For example, <span
-							class="background1"><i>55.2%</i></span> of companies in the health care industry died because of a lack of business model, followed by Enterprise Service and Marketing Industry.
+						<h3 style="color:white;padding-bottom: 10px"><b>Business Model Not Viable - the "number one
+								culprit" of numerous company failures</b></h3>
+						Among the causes of company failures in most industries, the most common cause of failures is
+						"lack of business model". For example, <span class="background1"><i>55.2%</i></span> of
+						companies in the health care industry failed because their business model are not viable,
+						followed by Enterprise Service and Marketing Industry.
 						<img style="width:100%;padding-top: 20px" src="img/rank.png">
 
 					</div>
-					<div class="panel" style="margin-top:500px">The "number one culprit" in most industries is most relevant to the business model. There are exceptions, however, in the Automotive & Transportation Industry and Finance Industry.</div>
+					<div class="panel" style="margin-top:500px">The "number one culprit" in most industries is most
+						relevant to the business model. There are <b>exceptions</b>, however, in the <span
+							style="color:#2ec09a;padding-bottom: 10px"><b>Automotive & Transportation
+								Industry</b></span> and <span style="color:#e4c630;padding-bottom: 10px"><b>Finance
+								Industry</b></span>.</div>
 				</div>
 				<div class='step' data-step='6'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px"><b>Industry Competition - Automotive & Transportation Industry</b></h3>
-						In <b style="color:#2ec09a">Automotive & Transportation Industry</b>, the most common cause of failues is "industry competition". Bike-sharing, for example, was once a popular industry as one of the representative branches of the car transportation industry. "Overnight, bike-sharing companies mushroomed, and it didn't take long for a large number of them to die in the competition. Even the bike-sharing giant, ofo, was not spared.
+						<h3 style="color:white;padding-bottom: 10px"><b>Industry Competition - Automotive &
+								Transportation Industry</b></h3>
+						In <b style="color:#2ec09a">Automotive & Transportation Industry</b>, the most common cause of
+						failues is "industry competition". Bike-sharing, for example, was once a popular field as a
+						representative branch of the transportation industry. At that time, bike-sharing companies
+						mushroomed, and it didn't take long for a large number of them to close down in the competition.
+						Even the bike-sharing giant, ofo, was not spared.
 						<img style="width:100%" src="img/car.png">
 					</div>
 				</div>
 				<div class='step' data-step='7'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px"><b>Supervision - Choking the Finance Industry</b></h3>
-						In <b style="color: #e4c630">Finance Industry</b>, the most common cause of failues is "Policy Supervision". A large part of the finance industry of new economy companies are online lending companies. A series of scandals, such as the nude loans to university students, the "714 high rollers" that broke out at the 315 Gala, and various P2P lending platforms that ran away with their money, have revealed the chaos in the online lending industry and demonstrated the need for government regulation. This is why government regulation has become the cause of the highest percentage of failures in the finance industry.
-							<!-- 今年7月1日，湖南卫视著名主持人汪涵因所代言的P2P产品爱钱进疑似“暴雷”而登上微博热搜。 -->
+						<h3 style="color:white;padding-bottom: 10px"><b>Supervision - Choking the Finance Industry</b>
+						</h3>
+						In <b style="color: #e4c630">Finance Industry</b>, the most common cause of failues is "Policy
+						Supervision". A large number of the finance companies are online lending companies. A series of
+						scandals, such as the 'naked loans' that force female students to bare all in return for more
+						cash, have revealed the chaos in the online lending industry and demonstrated the need for
+						policy supervision. This is why supervision has become the most common cause of failures in the
+						finance industry.
+						<!-- 今年7月1日，湖南卫视著名主持人汪涵因所代言的P2P产品爱钱进疑似“暴雷”而登上微博热搜。 -->
 						<div style="text-align:center;">
 							<img style="width:50%;" src="img/money.png">
 						</div>
@@ -265,60 +300,93 @@
 				</div>
 				<div class='step' data-step='8'>
 					<div class="panel">
-						Different industries have different causes of failures because they have their own characteristics. So, do the causes of failures vary by funding round? As you can see from the graph, the number of failures decreases from "not yet invested" to "Series C".</div>
+						Different industries have different causes of failures because they have their own
+						characteristics. So, do the causes of failures vary by funding round? As you can see from the
+						graph, the number of failures decreases from "No Funding" to "Series C".</div>
 					<div class="panel" style="margin-top:600px">
-						The number one cause of failures for companies that have not yet received investment and for angel rounds is market positioning, while in Series A and B the number one cause of failures becomes external issues.</div>
-					<div class="panel" style="margin-top:600px">It is worth noting that the proportion of team issues(<svg style="position:relative;top:5px"
-							t="1577696638572" class="icon" viewBox="0 0 1024 1024" version="1.1"
-							xmlns="http://www.w3.org/2000/svg" p-id="2169" width="20" height="20">
+						The No.1 cause of failures for companies that have not yet received investment and for angel
+						rounds is market positioning, while in Series A and B the No.1 cause of failures becomes
+						external issues.</div>
+					<div class="panel" style="margin-top:600px">It is worth noting that the proportion of team
+						issues(<svg style="position:relative;top:5px" t="1577696638572" class="icon"
+							viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2169"
+							width="20" height="20">
 							<path d="M128.9 128h772.3v772.3H128.9V128z" p-id="2170" fill="#7db35c"></path>
-						</svg>)as a cause of failures also increases gradually across the different rounds (Angel Round -> Series A -> Series B -> Series C). This indicates that the later a company grows, the more important team issues become, and may become an easily overlooked but fatal factor.
+						</svg>) as a cause of failures also increases gradually across the different rounds (Angel Round
+						-> Series A -> Series B -> Series C). This indicates that the later a company grows, the more
+						important team issues become, which may become an easily overlooked but fatal factor.
 						<img style="width:300px;margin:20px auto" src="img/tuandui.png">
 					</div>
 				</div>
 
 				<div class='step' data-step='8'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px">Top Failed Startups</h3>
-						In a "fierce" race of startup failures, which companies have come out on top? Let's take a look at the top startups that fail🏆.<div class=""></div>
+						<h3 style="color:white;padding-bottom: 10px"><b>🏆 Top Failed Startups</b></h3>
+						In a "fierce" race of startup failures, which companies have come out on top? Let's take a look
+						at the top startups that fail.<div class=""></div>
 					</div>
 				</div>
 				<div class='step' data-step='9'>
 					<div class="panel">
 
-						<h2 style="text-align: center;font-weight:800">WeBi</h2>
-						<h4 style="text-align: center;font-weight:600">Reason for listing:Live for up to 21 years</h4>
+						<h2 style="text-align: center;font-weight:800">WEBi English</h2>
+						<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Longest-lived</h3>
+						<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 12px;">Live for up to 21 years</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
-								<li class="block-item">1998 WeBi was founded</li>
-								<li class="block-item">11/2017 Webi ranked No. 1 in the language training industry during China's "Double 11" shopping festival.</li>
-								<li class="block-item">10/2019 A number of Webi's stores ceased operations and were revealed to have defaulted on employee payroll.</li>
+								<li class="block-item">1998 WEBi English was founded</li>
+								<li class="block-item">11/2017 WEBi English ranked No. 1 in the language training
+									industry during China's "Double 11" shopping festival.</li>
+								<li class="block-item">10/2019 A number of WEBi English's stores ceased operations and
+									were revealed to have defaulted on employee payroll.</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						<h4><b>WeBi’s management has disappeared, leaving behind a large number of employees whose wages are in arrears and students who cannot be refunded their tuition fees. Why did this older generation, the 21-year-old former training giant, have fallen to this point?</b></h4>
+						<h4><b>WEBi English’s management has disappeared, leaving behind a large number of employees
+								whose wages are in arrears and students who cannot be refunded their tuition fees. Why
+								did this older generation, the 21-year-old former training giant, have fallen to this
+								point?</b></h4>
 						<br>
 
-						According to a public apology letter issued by Webi's founder, Gao Weiyu, Webi's original financing plan was continuously postponed due to the continued deterioration of its performance and the impact of various recent negative public opinions, which brought about a break in its capital chain, resulting in the company's inability to continue normal operations. How did the former training giant fall to this point?<br><br>
+						According to a public apology letter issued by WEBi's founder, Gao Weiyu, WEBi's original
+						financing plan was continuously postponed due to the continued deterioration of its performance
+						and the impact of various recent negative public opinions, which brought about a break in its
+						capital chain, resulting in the company's inability to continue normal operations. How did the
+						former training giant fall to this point?<br><br>
 						<span class="background1"><b><i>1. Pivot Gone Wrong </i></b></span><br>
-						Webi was founded in 1998, at a time when China was in the midst of the first wave of foreign companies entering the country after the reform and opening up and the fever of going abroad, and Webi seized the great market of adult English training. However, more than two decades later, China's society has placed a high priority on English and people have been learning English since they were children, leading to a significant shrinkage of the adult English training market, which has naturally created a great obstacle to the development of Webi, which focuses on adult English education.
+						Webi was founded in 1998, at a time when China was in the midst of the first wave of foreign
+						companies entering the country after the reform and opening up and the fever of going abroad,
+						and WEBi seized the great market of adult English training. However, more than two decades
+						later, China's society has placed a high priority on English and people have been learning
+						English since they were children, leading to a significant shrinkage of the adult English
+						training market, which has naturally created a great obstacle to the development of Webi, which
+						focuses on adult English education.
 						<br><br>
-						<span class="background1"><b><i>2. Blind expansion leads to running out of cash </i></b></span><br>
-						Webi is also suspected of inducing trainees to use online loans to pay tuition fees in one lump sum, and use the money to expand the store quickly, resulting in insufficient income, broken cash flow, and unsuccessful financing plans.
-						Many students have used the Internet financial products recommended by Webi, but now they are all empty. They are faced with the triple dilemma of not being able to attend classes, and having to pay back their loans every month.
-						In the end, a 21-year-old company left the scene sadly with continuous negative public sentiment and debts to students.
+						<span class="background1"><b><i>2. Blind expansion leads to running out of cash
+								</i></b></span><br>
+						WEBi is also suspected of inducing trainees to use online loans to pay tuition fees in one lump
+						sum, and use the money to expand the store quickly, resulting in insufficient income, broken
+						cash flow, and unsuccessful financing plans.
+						Many students have used the Internet financial products recommended by WEBi, but now they are
+						all empty. They are faced with the triple dilemma of not being able to attend classes, and
+						having to pay back their loans every month.
+						In the end, a 21-year-old company left the scene sadly with continuous negative public sentiment
+						and debts to students.
 					</div>
 				</div>
 				<div class='step' data-step='10'>
 					<div class="panel">
 						<h2 style="text-align: center;font-weight:800">Kala Bike</h2>
-						<h4 style="text-align: center;font-weight:600">Reason for listing:Survived only 19 days</h4>
+						<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Shortest-lived</h3>
+						<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 14px;">Survived only 19 days</h4>
 						<!-- <br> -->
 						<div style="position:relative;">
 							<ul class="timeline">
 								<li class="block-item">10/2016 Kala's team is formed</li>
-								<li class="block-item">02/2017 The Kala staff said that the company put 500 and 167 bicycles in two batches within one month, but only 157 vehicles were recovered, with a loss rate of 76.5%.
+								<li class="block-item">02/2017 The Kala staff said that the company put 500 and 167
+									bicycles in two batches within one month, but only 157 vehicles were recovered, with
+									a loss rate of 76.5%.
 								</li>
 								<li class="block-item">03/2017 Kala goes bankrupt</li>
 							</ul>
@@ -327,52 +395,90 @@
 					<div class="panel">
 						<h4><b>A sad history of shared bicycle entrepreneurship-closed in 19 days</b></h4>
 						<br>
-						Cala put 667 bikes in Putian City in 19 days, but lost most of them. Only 157 vehicles were recovered, with a loss rate of 76.5%. Faced with this situation, investors' full withdrawal of capital resulted in the company having to face bankruptcy.<br><br>
-						<span class="background1"><b><i>"Professional manager" entrepreneurship that allows investors to manage the accounts is not desirable </i></b></span><br>
-						The agreement signed by the founder of Cala and the investor is for the investor to manage the finances, and the founder does nothing.
-						When the company is in crisis, investors can actually withdraw the full amount of investment money from the user’s deposit pool, and remove the financial staff and customer service staff. Such behavior not only directly leads to the bankruptcy of the company, but also transfers all the risk To the users. It is the "professional manager" entrepreneurship that makes Cala fall into such a passive position.
+						Cala put 667 bikes in Putian City in 19 days, but lost most of them. Only 157 vehicles were
+						recovered, with a loss rate of 76.5%. Faced with this situation, investors' full withdrawal of
+						capital resulted in the company having to face bankruptcy.<br><br>
+						<span class="background1"><b><i>"Professional manager" entrepreneurship that allows investors to
+									manage the accounts is not desirable </i></b></span><br>
+						The agreement signed by the founder of Cala and the investor is for the investor to manage the
+						finances, and the founder does nothing.
+						When the company is in crisis, investors can actually withdraw the full amount of investment
+						money from the user’s deposit pool, and remove the financial staff and customer service staff.
+						Such behavior not only directly leads to the bankruptcy of the company, but also transfers all
+						the risk To the users. It is the "professional manager" entrepreneurship that makes Cala fall
+						into such a passive position.
 					</div>
 
 				</div>
 				<div class='step' data-step='11'>
 					<div class="panel">
 						<h2 style="text-align: center;font-weight:800">Kuqi Bike</h2>
-						<h4 style="text-align: center;font-weight:600">Reason for listing:Survive for 379 days, raise 1 billion yuan, spend an average of 2.6385 million per day</h4>
+							<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Most-funded</h3>
+							<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 20px;">Survive for 379 days, raise 1
+								billion, spend an average of 2.6385 million per day</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
 								<li class="block-item">11/2016 Kuqi was founded</li>
-								<li class="block-item">09/2017 Due to the fact that the deposit is difficult to refund, and many operating units have lost contact with the Industrial and Commercial Bureau, some areas have begun to clean up the their bikes.</li>
-								<li class="block-item">12/2017 The Chinese Consumers Association published a document stating that as of December 11, there had been more than 210,000 complaints against Kuqi alone, involving more than 1 billion yuan.</li>
-								<li class="block-item">07/2019 According to user complaints, on July 12, 2019, all three telephone lines showing deposit refunds announced by Kuqi had been shut down.</li>
+								<li class="block-item">09/2017 Due to the fact that the deposit is difficult to refund,
+									and many operating units have lost contact with the Industrial and Commercial
+									Bureau, some areas have begun to clean up the their bikes.</li>
+								<li class="block-item">12/2017 The Chinese Consumers Association published a document
+									stating that as of December 11, there had been more than 210,000 complaints against
+									Kuqi alone, involving more than 1 billion yuan.</li>
+								<li class="block-item">07/2019 According to user complaints, on July 12, 2019, all three
+									telephone lines showing deposit refunds announced by Kuqi had been shut down.</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						<span class="background1"><b><i>The bike-sharing industry has entered the cold winter, and there is no way to keep warm when you burn </i></b></span><br>
-						The break of the capital chain became the last straw that crushed Kuqi. Once upon a time, ofo has defeated many bike-sharing startups and small and medium-sized investors in competition in the industry, and now it has become lingering.<br>
-						Like ofo, Kuqi is facing the dilemma that the deposit cannot be refunded. Complaints against Kuqi continued, involving a huge amount of 2.1 billion yuan. As one of the victims, I advise everyone that we should be cautious about similar deposit collection methods in the future.
+						<span class="background1"><b><i>The bike-sharing industry has entered the cold winter, and there
+									is no way to keep warm when you burn </i></b></span><br>
+						The break of the capital chain became the last straw that crushed Kuqi. Once upon a time, ofo
+						has defeated many bike-sharing startups and small and medium-sized investors in competition in
+						the industry, and now it has become lingering.<br>
+						Like ofo, Kuqi is facing the dilemma that the deposit cannot be refunded. Complaints against
+						Kuqi continued, involving a huge amount of 2.1 billion yuan. As one of the victims, I advise
+						everyone that we should be cautious about similar deposit collection methods in the future.
 					</div>
 				</div>
 				<div class='step' data-step='12'>
 					<div class="panel">
 						<h2 style="text-align: center;font-weight:800">TuanDai</h2>
-						<h4 style="text-align: center;font-weight:600">Reason for listing:Obtained 2.475 billion yuan in financing</h4>
+							<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Most deceptive</h3>
+							<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 20px;">Obtained 2.475 billion yuan
+								in financing but fled with the money</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
 								<li class="block-item">07/2012 Tuandai.com put into use</li>
-								<li class="block-item">09/2017 Tang Jun, founder and CEO of Tuandai.com, became the largest shareholder and actual controller of Guangyingxia, a listed company on the NEEQ.</li>
-								<li class="block-item">03/2016 The cumulative trading volume of the platform is nearly 16 billion yuan, and the platform has more than 2.4 million registered investment users, earning more than 520 million yuan in income for investors.</li>
-								<li class="block-item">03/2019 The Dongguan Public Security Bureau issued a notice that Tang and Zhang, the actual controllers of the group loan network, took the initiative to surrender to the Dongguan Public Security Bureau.</li>
+								<li class="block-item">09/2017 Tang Jun, founder and CEO of Tuandai.com, became the
+									largest shareholder and actual controller of Guangyingxia, a listed company on the
+									NEEQ.</li>
+								<li class="block-item">03/2016 The cumulative trading volume of the platform is nearly
+									16 billion yuan, and the platform has more than 2.4 million registered investment
+									users, earning more than 520 million yuan in income for investors.</li>
+								<li class="block-item">03/2019 The Dongguan Public Security Bureau issued a notice that
+									Tang and Zhang, the actual controllers of the group loan network, took the
+									initiative to surrender to the Dongguan Public Security Bureau.</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						Tuandai.com has been filed for investigation on suspicion of illegally absorbing public deposits, and Tang Jun has surrendered as the actual controller. It's like a dream of a young CEO born in the 1985 with a net worth of over 100 million. His identity has changed dramatically in a blink of an eye.
+						Tuandai.com has been filed for investigation on suspicion of illegally absorbing public
+						deposits, and Tang Jun has surrendered as the actual controller. It's like a dream of a young
+						CEO born in the 1985 with a net worth of over 100 million. His identity has changed dramatically
+						in a blink of an eye.
 						<br><br>
-						<span class="background1"><b><i>Investment is risky, and Internet finance needs more caution </i></b></span><br>
-						The “authoritative” recommendation of Tuandai.com’s analysis is arrogant, and the “herd thinking” that others voted for has caused many people to fall into the “big pit”. The annualized rate of return for high novices is even more exciting.
-						Therefore, in order to invest, we must deeply reflect and be vigilant at all times to make risk warnings. It is necessary to distinguish between blindly following investors and not believing in the "promises" of shorts. After fully understanding and in-depth analysis, invest in them. If there is no way to distinguish, it is recommended to avoid risks.
-						At the same time, it should also promote the integration of Internet financial big data and credit reporting systems to establish a better social credit reporting system.
+						<span class="background1"><b><i>Investment is risky, and Internet finance needs more caution
+								</i></b></span><br>
+						The “authoritative” recommendation of Tuandai.com’s analysis is arrogant, and the “herd
+						thinking” that others voted for has caused many people to fall into the “big pit”. The
+						annualized rate of return for high novices is even more exciting.
+						Therefore, in order to invest, we must deeply reflect and be vigilant at all times to make risk
+						warnings. It is necessary to distinguish between blindly following investors and not believing
+						in the "promises" of shorts. After fully understanding and in-depth analysis, invest in them. If
+						there is no way to distinguish, it is recommended to avoid risks.
+						At the same time, it should also promote the integration of Internet financial big data and
+						credit reporting systems to establish a better social credit reporting system.
 					</div>
 
 				</div>
@@ -380,27 +486,35 @@
 				<div class='step' data-step='13'>
 					<div class="panel">
 						<h2 style="text-align: center;font-weight:800">Qvod</h2>
-						<h4 style="text-align: center;font-weight:600">Reason for listing:The most memorable company</h4>
+						<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Most popular</h3>
+							<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 20px;">The most memorable company</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
 								<li class="block-item">12/2007 Shenzhen QVOD technology company was founded</li>
-								<li class="block-item">01/2009 QVOD received millions of dollars in Series A investment from Softbank SAIF</li>
-								<li class="block-item">2011 Qvod has become the player with the largest market share in China </li>
+								<li class="block-item">01/2009 QVOD received millions of dollars in Series A investment
+									from Softbank SAIF</li>
+								<li class="block-item">2011 Qvod has become the player with the largest market share in
+									China </li>
 								</li>
-								<li class="block-item">09/2016 Gvod company and its executives were tried on suspicion of spreading obscene materials for profit, Wang Xin was sentenced to 3 years and 6 months in prison</li>
+								<li class="block-item">09/2016 Gvod company and its executives were tried on suspicion
+									of spreading obscene materials for profit, the founder Wang Xin was sentenced to 3 years and 6
+									months in prison</li>
 								<!-- <li class="block-item">2007.12 深圳快播成立</li> -->
-								<li class="block-item">09/2018 Shenzhen Intermediate People's Court ruled that Qvod was liquidated, effective today</li>
+								<li class="block-item">09/2018 Shenzhen Intermediate People's Court ruled that Qvod was
+									liquidated, effective today</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						Qvod was once called "the youth of an otaku". It is the excuseable that Qvod is most remembered by people
-						Back then, Wang Xin's "technological innocence" theory put forward in his defense was recognized by most netizens, but it did not change the outcome. Qvod still lost the case and Wang Xin was sentenced to 3 years and 6 months in prison.
-						Times have changed, and now we have all admitted that a company is obliged to be responsible for the actions of users. Just like Didi's ride-hailing murder case, Didi must also stand up and be beaten. So although the collapse of Qvod is regrettable, it has its historical inevitability.
-
+						Qvod was once called "the youth of an otaku". It is the excuseable that Qvod is most remembered
+						by people.
+						Back then, Qvod'founder Wang Xin's "technological innocence" theory put forward in his defense was recognized
+						by most netizens, but it did not change the outcome. Qvod still lost the case and Wang Xin was
+						sentenced to 3 years and 6 months in prison.
+						Times have changed, and now we have all admitted that a company is obliged to be responsible for
+						the actions of users. Just like China’s ride-hailing giant Didi Chuxing must stand up and be
+						condemned for the murder case while using Didi’s car-pooling service. So although the collapse of Qvod is regrettable, it has its historical inevitability.
 					</div>
-
-
 				</div>
 				<div class='step' data-step='14' id="last-child">
 					<div class="blank"></div>
@@ -414,7 +528,8 @@
 			<!-- <div style="height:100vh;background-image: url(img/outro.png);">
 			</div> -->
 			<img style="height:100vh;margin:0 auto;" src="img/outro.png">
-			<p style="font-size:12px;position: absolute;bottom: 10%;margin:0 auto;left:0;right:0;">Data Source: IT Orange<span><a href="https://www.itjuzi.com/deathCompany" target="_blank"> LINK</a></span></p>
+			<p style="font-size:12px;position: absolute;bottom: 10%;margin:0 auto;left:0;right:0;">Data Source: IT
+				Orange<span><a href="https://www.itjuzi.com/deathCompany" target="_blank"> LINK</a></span></p>
 		</section>
 	</main>
 
