@@ -175,7 +175,7 @@ article{
   /* box-shadow: 5px 5px 14px rgba(67, 67, 67, 0.5);  */
   position: relative;
   z-index:2;
-  /* text-align: left; */
+  text-align: left;
   padding: 1rem;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.9);
@@ -294,7 +294,7 @@ article{
   position: absolute;
   display: inline-block;
   left: 16px;
-  top: 218px;
+  top: 188px;
   width: 6px;
   height: 6px;
   border: 3px solid #e17c05;
@@ -308,7 +308,7 @@ article{
   position: absolute;
   display: inline-block;
   left: 16px;
-  top: 278px;
+  top: 218px;
   width: 6px;
   height: 6px;
   border: 3px solid #1c6996;
@@ -322,7 +322,7 @@ article{
   position: absolute;
   display: inline-block;
   left: 16px;
-  top: 308px;
+  top: 248px;
   width: 6px;
   height: 6px;
   border: 3px solid #39a6a5;
@@ -336,7 +336,7 @@ article{
   position: absolute;
   display: inline-block;
   left: 16px;
-  top: 368px;
+  top: 308px;
   width: 6px;
   height: 6px;
   border: 3px solid #73af47;

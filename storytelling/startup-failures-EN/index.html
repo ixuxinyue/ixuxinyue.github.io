@@ -68,7 +68,12 @@
 
 		.step {
 			margin: 0 auto 2rem auto;
+			text-align: justify;
 			/* color: #fff; */
+		}
+
+		.step p {
+			text-align: justify;
 		}
 
 		.step:last-child {
@@ -96,7 +101,7 @@
 			<div class="cover_up"></div>
 			<div id='teaser' style="width:100%;height:100vh;">
 
-				<img src="img/teaser-v2.png" alt="" style="position:relative;top:10%;height:550px">
+				<img src="img/teaser-v2.png" alt="" style="position:relative;top:5%;height:550px">
 			</div>
 		</section>
 
@@ -114,23 +119,30 @@
 					<div style="position: absolute;top: 50%;transform: translateY(-47%);">
 						<div class="bar-race" style="display:none;margin:0 auto;max-width:650px;">
 							<!-- <div class="flourish-embed" data-src="visualisation/1112101"></div> -->
-							<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/3869587"
-								data-url="https://flo.uri.sh/visualisation/3869587/embed" aria-label="">
-								<!-- <script src="https://public.flourish.studio/resources/embed.js"></script> -->
+							<div class="bar-intro">
+								<p style="font-size: 14px;line-height: 24px;">The bar chart race shows the ranking of
+									industries according to the number of startup failures from 2010 to 2020.</p>
+							</div>
+							<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/5132143">
+								<script src="https://public.flourish.studio/resources/embed.js"></script>
 							</div>
 							<div class="bar-intro">
 								<p style="font-size: 8px;"><img
 										style="width:16px;height:16px;top: 2px;position: relative" src="img/alert2.png">
-									拖动时间轴上的箭头，即可探索每年各行业死亡的公司数量。</p>
+									Drag the arrow on the timeline to explore the number of companies closing down in
+									various industries.</p>
 								<br>
 								<div class="bar-insight"
 									style="font-size:13px;border:1px dotted #d3d3d3;padding:12px;line-height:25px">
 									<p class="ghost" style="position: relative">
-										在2013-2016年间，死亡数量排行第一、第二的行业，分别在电子商务和企业服务中轮换，而到了2020年，金融行业首当其冲，直接跃升为第1，成为倒闭数量第一的行业。
+										From 2013 to 2016, the industries that ranked first and second switched between
+										e-commerce and enterprise services respectively according to the number of
+										bankruptcies. By 2020, the financial industry has directly jumped to No.1,
+										becoming the industry with the largest number of bankruptcies.
 									</p>
-									<p class="ghost" style="margin-top:10px;position: relative">
+									<!-- <p class="ghost" style="margin-top:10px;position: relative">
 										观察右下角的Total数据，可以发现在2017年，年度死亡公司数量达到了近十年来的顶峰。从2017年至今，死亡公司数量呈下降趋势。但是这与近三年新增公司数量逐年降低有关。
-									</p>
+									</p> -->
 								</div>
 							</div>
 						</div>
@@ -159,11 +171,11 @@
 						</div>
 						<div id="circle-packing" style="display:none;height:100vh">
 							<td style="position:relative;">
-								<img style="position:absolute;z-index:87" id="img_5" src="img/img_5.png">
-								<img style="position:absolute;z-index:86" id="img_6" src="img/img_6.png">
-								<img style="position:absolute;z-index:85" id="img_7" src="img/img_7.png">
-								<img style="position:absolute;z-index:84" id="img_8" src="img/img_8.png">
-								<img style="position:absolute;z-index:83" id="img_9" src="img/img_9.png">
+								<img style="position:absolute;z-index:87" id="img_5" src="img/img_5.jpg">
+								<img style="position:absolute;z-index:86" id="img_6" src="img/img_6.jpg">
+								<img style="position:absolute;z-index:85" id="img_7" src="img/img_7.jpg">
+								<img style="position:absolute;z-index:84" id="img_8" src="img/img_8.jpg">
+								<img style="position:absolute;z-index:83" id="img_9" src="img/img_9.jpg">
 
 							</td>
 						</div>
@@ -212,23 +224,29 @@
 
 
 				<div class='step' data-step='2'>
-					<div class="panel">每一年都有不计其数的新经济公司死亡，那么他们都是因为什么原因倒闭的呢？</div>
-					<div class="panel" style="margin-top:500px"> 将死亡原因分成6个大类，由死亡数量排序分别是 <span
-							class="background1"><i>市场定位 </i></span>、<span class="background2"><i>外部问题 </i></span>、<span
-							class="background3"><i>资金问题 </i></span>、<span class="background4"><i>产品问题 </i></span>、<span
-							class="background5"><i>运营问题 </i></span>、<span class="background6"><i>团队问题 </i></span>。</div>
-
+					<div class="panel">Countless startups fail every year, so why do they fail?</div>
+					<div class="panel" style="margin-top:500px">The reasons for failures are divided into 6 categories,
+						which are sorted by the number of startup failures. <span class="background1"><i>Market
+								Positioning</i></span> / <span class="background2"><i>External Issues </i></span> /
+						<span class="background3"><i>Financing Problems </i></span> / <span
+							class="background4"><i>Product Issues </i></span> / <span class="background5"><i>Operational
+								Issues </i></span> / <span class="background6"><i>Team Issues </i></span>.</div>
 				</div>
 				<div class='step' data-step='4'>
 					<div class="panel">
-						这6个大类，又可以细分为20个小类，分别为：<br>
+						These 6 categories can be subdivided into 20 sub-categories: <br>
 						<ul style="font-size: smaller;">
-							<li id="li-1" style="list-style-type:none;">商业模式匮乏、市场伪需求、业务调整、业务过于分散</li>
-							<li id="li-2" style="list-style-type:none;">行业竞争、政策监管、法律法规风险</li>
-							<li id="li-3" style="list-style-type:none;">现金流断裂、融资能力不足、烧钱</li>
-							<li id="li-4" style="list-style-type:none;">产品入场时机、产品缺陷严重</li>
-							<li id="li-5" style="list-style-type:none;">定价/成本问题、营销不足、转型问题、不重视客户</li>
-							<li id="li-6" style="list-style-type:none;">创始人问题、团队能力不足、团队缺乏激情、与投资人冲突</li>
+							<li id="li-1" style="list-style-type:none;">Business Model Not Viable / No Market
+								Need/ Adjustment of Business Scope / Lack of Focus</li>
+							<li id="li-2" style="list-style-type:none;">Get Outcompeted / Penalties by governments / Legal Challenges
+							</li>
+							<li id="li-3" style="list-style-type:none;">Run Out of Cash / Lacked Financing / Born Out
+							</li>
+							<li id="li-4" style="list-style-type:none;">Bad Timing / Poor Product</li>
+							<li id="li-5" style="list-style-type:none;">Pricing / Cost Issues / Poor Marketing / Pivot
+								Gone Wrong / Ignored Customers</li>
+							<li id="li-6" style="list-style-type:none;">Founder Issues / Lack of team ability / Lack of
+								Passion / Disharmony on Investors</li>
 						</ul>
 
 						<!-- “商业模式匮乏”、“市场伪需求”、“业务调整”、“业务过于分散”、“现金流断裂”、“融资能力不足”、“烧钱”、“行业竞争”、“政策监管”、“法律法规风险”、“产品入场时机”、“产品缺陷严重”、“定价/成本问题”、“营销不足”、“转型问题”、“不重视客户”、“创始人问题”、“团队能力不足”、“团队缺乏激情”、“与投资人冲突”。 -->
@@ -236,175 +254,259 @@
 				</div>
 				<div class='step' data-step='5'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px">商业模式匮乏——无数公司倒下的“头号元凶”</h3>
-						其中绝大多数行业的公司的死亡原因中，致死率最高的是“商业模式匮乏”。例如医疗健康行业因为商业模式匮乏而死亡的公司占比高达<span
-							class="background1"><i>55.2%</i></span>，其次是企业服务、广告营销等行业。
+						<h3 style="color:white;padding-bottom: 10px"><b>Business Model Not Viable - the "number one
+								culprit" of numerous company failures</b></h3>
+						Among the causes of company failures in most industries, the most common cause of failures is
+						"lack of business model". For example, <span class="background1"><i>55.2%</i></span> of
+						companies in the health care industry failed because their business model are not viable,
+						followed by Enterprise Service and Marketing Industry.
 						<img style="width:100%;padding-top: 20px" src="img/rank.png">
 
 					</div>
-					<div class="panel" style="margin-top:500px">大多数行业的“头号元凶”都与商业模式最为相关。但是也存在着例外，分别是汽车交通行业和金融行业。</div>
+					<div class="panel" style="margin-top:500px">While the number one culprit in most industries is the business model, there are two exceptions:  <span
+							style="color:#2ec09a;padding-bottom: 10px"><b>Automotive & Transportation
+								Industry</b></span> and <span style="color:#e4c630;padding-bottom: 10px"><b>Finance
+								Industry</b></span>.</div>
 				</div>
 				<div class='step' data-step='6'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px">行业竞争——汽车交通行业</h3>
-						<b
-							style="color:#2ec09a">汽车交通</b>行业致死率最高的死亡原因是“行业竞争”。例如共享单车，作为汽车交通行业的代表性分支之一，就曾经是风口行业。“一夜之间”，各种共享单车企业如雨后春笋般涌出，而后过不了多久，就在行业竞争中死亡了一大片。就连共享单车巨头ofo，也未能幸免。
-						<img style="width:100%" src="img/car1.jpg">
+						<h3 style="color:white;padding-bottom: 10px"><b>Industry Competition - Automotive &
+								Transportation Industry</b></h3>
+						In <b style="color:#2ec09a">Automotive & Transportation Industry</b>, the most common cause of
+						failues is "industry competition". Bike-sharing, for example, was once a popular field as a
+						representative branch of the transportation industry.
+						At that times, bike-sharing companies mushroomed, but it didn't take long for a large number of startups to close down in the competition.
+						Even the bike-sharing giant, ofo, was not spared.
+						<img style="width:100%" src="img/car.png">
 					</div>
 				</div>
 				<div class='step' data-step='7'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px">政策监管——金融行业的命门</h3>
-						<b
-							style="color: #e4c630">金融行业</b>死亡原因最多的则是“政策监管”。新经济公司金融行业中有很大一部分是网贷公司。大学生裸贷、315晚会爆出的“714高炮”，以及各种卷钱跑路的P2P网贷平台，这一系列丑闻揭露了网贷行业的乱象，显示了政府监管的必要性。所以政府的监管，成为了金融行业死亡原因占比最高的原因。
-							<!-- 今年7月1日，湖南卫视著名主持人汪涵因所代言的P2P产品爱钱进疑似“暴雷”而登上微博热搜。 -->
+						<h3 style="color:white;padding-bottom: 10px"><b>Penalties by Governments - Choking the Finance Industry</b>
+						</h3>
+						In <b style="color: #e4c630">Finance Industry</b>, the most common cause of failues is penalties by governments. A large number of the finance companies are online lending companies. A series of
+						scandals, such as the 'naked loans' that force female students to bare all in return for more
+						cash, have revealed the chaos in the online lending industry and demonstrated the need for
+						Penalties by governments. This is why penalties by governments has become the most common cause of failures in the
+						finance industry.
+						<!-- 今年7月1日，湖南卫视著名主持人汪涵因所代言的P2P产品爱钱进疑似“暴雷”而登上微博热搜。 -->
 						<div style="text-align:center;">
-							<img style="width:50%;" src="img/money.jpg">
+							<img style="width:50%;" src="img/money.png">
 						</div>
 					</div>
 
 				</div>
 				<div class='step' data-step='8'>
 					<div class="panel">
-						不同的行业因为有着其自身特点，所以有着不同的死亡原因。那么，对于不同的融资轮次，死亡的原因是否有所差别呢？从图中可以看出，从”尚未获投“一直到”C轮“，死亡公司的数量逐级递减。</div>
+						Now, let's change a lens to view startup failures. Do the causes of failures vary by funding round?
+						As you can see from the graph, the number of failures decreases from "No Funding" to "Series C".</div>
 					<div class="panel" style="margin-top:600px">
-						在尚未获得投资和天使轮死亡的公司中，死亡原因排名第一的是市场定位，而到了A轮和B轮，排名第一的死亡原因则变成了外部原因。</div>
-					<div class="panel" style="margin-top:600px">值得注意的是，团队问题(<svg style="position:relative;top:5px"
-							t="1577696638572" class="icon" viewBox="0 0 1024 1024" version="1.1"
-							xmlns="http://www.w3.org/2000/svg" p-id="2169" width="20" height="20">
+						The No.1 killer for companies that have not yet received investment and for angel
+						rounds is market positioning, while in Series A and B the No.1 killer becomes
+						external issues.</div>
+					<div class="panel" style="margin-top:600px">This indicates that as a company grows, team-building(<svg style="position:relative;top:5px" t="1577696638572" class="icon"
+							viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2169"
+							width="20" height="20">
 							<path d="M128.9 128h772.3v772.3H128.9V128z" p-id="2170" fill="#7db35c"></path>
-						</svg>方块所表示部分)这个死亡原因在不同轮次(天使轮->A轮->B轮->C轮)中所占的比例，也逐步提高。说明公司越发展到后期，团队问题愈显重要，可能成为一个容易被忽视但却致命的因素。
+						</svg>)  becomes more and more important. Although this issue can be easily overlooked, it can hurt a startup fatally.
 						<img style="width:300px;margin:20px auto" src="img/tuandui.png">
 					</div>
 				</div>
 
 				<div class='step' data-step='8'>
 					<div class="panel">
-						<h3 style="color:white;padding-bottom: 10px">彩蛋环节——排行榜之最</h3>
-						在“激烈”的新经济公司死亡赛道中，究竟是哪些公司拔得头筹呢？让我们来一起揭秘新经济公司排行榜之最🏆。
+						<h3 style="color:white;padding-bottom: 10px"><b>🏆 Award for Failed Startups</b></h3>
+						In a "fierce" race of startup failures, which companies have standed out? Here, we award five companies for "longest-lived", "shortest-lived", "most-funded", "most deceptive" and "most popular".
+						<div class=""></div>
 					</div>
 				</div>
 				<div class='step' data-step='9'>
 					<div class="panel">
 
-						<h2 style="text-align: center;font-weight:800">韦博英语</h2>
-						<h4 style="text-align: center;font-weight:600">上榜理由：存活时长高达21年</h4>
+						<h2 style="text-align: center;font-weight:800">WEBi English</h2>
+						<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Longest-lived</h3>
+						<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 12px;">Lived for up to 21 years</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
-								<li class="block-item">1998 韦博英语创立。</li>
-								<li class="block-item">2017.11 双十一期间韦博英语成交位列语言培训行业销售排行第一。</li>
-								<li class="block-item">2019.10 韦博英语多家门店相继停止运营、员工被曝出拖欠薪资。</li>
+								<li class="block-item">1998 WEBi English was founded</li>
+								<li class="block-item">11/2017 WEBi English ranked No. 1 in the language training
+									industry during China's "Double 11" shopping festival.</li>
+								<li class="block-item">10/2019 A number of WEBi English's stores ceased operations and
+									were revealed to have defaulted on employee payroll.</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						<h4><b>韦博英语人去楼空、员工欠薪未发、学员退费无门，21岁“高龄”的昔日培训巨头竟沦落到如此地步？</b></h4>
+						<h4><b>WEBi English’s management has disappeared, leaving behind a large number of employees
+								whose wages are in arrears and students who cannot be refunded their tuition fees. Why
+								did this older generation, the 21-year-old former training giant, have fallen to this
+								point?</b></h4>
 						<br>
-
-						据韦博英语创始人高卫宇发表的公开道歉信表示，韦博英语由于原本的融资计划因业绩持续恶化，以及近期各类负面舆情影响不断被推迟，带来了资金链断裂，导致公司无法正常运营下去。可是曾经的培训巨头，
-						是怎么沦落到这一步呢？<br><br>
-						<span class="background1"><b><i>1. 没有及时转型 </i></b></span><br>
-						1998年韦博英语成立，正好是改革开放后外资企业进入中国与出国热的第一波高潮，因此韦博英语捕捉到了这波成人英语培训的市场红利。然而在二十多年后的今天，在现在高度重视英语的大环境下，英语已经都从娃娃抓起，英语培训的主力在20年间已经慢慢从成人下沉到了娃娃们，
-						这注定导致了成人英语培训市场的萎缩，而韦博英语主打成人英语培训，明日黄花已成必然。
+						According to a public apology letter issued by WEBi's founder, Gao Weiyu, WEBi's original
+						financing plan was continuously postponed due to the continued deterioration of its performance
+						and the impact of various recent negative public opinions, which brought about a break in its
+						capital chain, resulting in the company's inability to continue normal operations. How did the
+						former training giant fall to this point?<br><br>
+						<span class="background1"><b><i>1. Pivot Gone Wrong </i></b></span><br>
+						Webi was founded in 1998, at a time when China was in the midst of the first wave of foreign
+						companies entering the country after the reform and opening up and the fever of going abroad,
+						and WEBi seized the great market of adult English training. However, more than two decades
+						later, China's society has placed a high priority on English and people have been learning
+						English since they were children, leading to a significant shrinkage of the adult English
+						training market, which has naturally created a great obstacle to the development of Webi, which
+						focuses on adult English education.
 						<br><br>
-						<span class="background1"><b><i>2. 盲目扩张，现金流断裂 </i></b></span><br>
-						同时，韦博英语还涉嫌诱导学员使用网络贷款来一次性缴足学费，并利用这些钱来进行门店的快速扩张，导致入不敷出，现金流断裂，融资计划也未能成功。
-						不少学员使用了韦博英语推荐的互联网金融产品，现在却竹篮打水一场空，他们面临着既上不了课，又退不了钱还必须每个月还贷款的三重困境中。
-						最终一家21年的老企业，带着连续不断的负面舆情，欠着学员的一屁股债，黯然离场。
+						<span class="background1"><b><i>2. Blind expansion leads to running out of cash
+								</i></b></span><br>
+						WEBi is also suspected of inducing trainees to use online loans to pay tuition fees in one lump
+						sum, and use the money to expand the store quickly, resulting in insufficient income, broken
+						cash flow, and unsuccessful financing plans.
+						Many students have used the Internet financial products recommended by WEBi, but now they are
+						all empty. They are faced with the triple dilemma of not being able to attend classes, and
+						having to pay back their loans every month.
+						In the end, a 21-year-old company left the scene sadly with continuous negative public sentiment
+						and debts to students.
 					</div>
 				</div>
 				<div class='step' data-step='10'>
 					<div class="panel">
-						<h2 style="text-align: center;font-weight:800">卡拉单车</h2>
-						<h4 style="text-align: center;font-weight:600">上榜理由：上线时间19天即倒闭</h4>
+						<h2 style="text-align: center;font-weight:800">Kala Bike</h2>
+						<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Shortest-lived</h3>
+						<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 14px;">Survived only 19 days</h4>
 						<!-- <br> -->
 						<div style="position:relative;">
 							<ul class="timeline">
-								<li class="block-item">2016.10 卡拉单车团队组建</li>
-								<li class="block-item">2017.2 卡拉单车表示，公司在1个月内分两批次，分别投放了500辆和167辆单车，但最终只找回157辆车，丢失率为76.5%
+								<li class="block-item">10/2016 Kala's team is formed</li>
+								<li class="block-item">02/2017 The Kala staff said that the company put 500 and 167
+									bicycles in two batches within one month, but only 157 vehicles were recovered, with
+									a loss rate of 76.5%.
 								</li>
-								<li class="block-item">2017.3 卡拉单车关闭</li>
+								<li class="block-item">03/2017 Kala goes bankrupt</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						<h4><b>上线19天就倒闭，共享单车创业心酸史</b></h4>
+						<h4><b>A sad history of shared bicycle entrepreneurship-closed in 19 days</b></h4>
 						<br>
-						卡拉单车，用19天时间在莆田市投放了667辆车，结果丢失大半，只找回来157辆车，丢失率76.5%。投资人立马全额撤资，导致公司不能不面临倒闭。<br><br>
-						<span class="background1"><b><i>让投资人管账的“职业经理人”式创业不可取 </i></b></span><br>
-						卡拉单车创始人与投资人签订的协议是让投资人管理财务，自己做“甩手掌柜”。
-						在公司危难时刻，投资人居然可以从用户的押金池里面把全额投资款抽出来带走，并且撤走了财务和客服，这样的行为不仅直接导致了公司的破产，还将所有的风险全部转嫁到用户身上。所以“职业经理人”式创业让卡拉单车陷入了如此被动的境地。
+						Cala put 667 bikes in Putian City in 19 days, but lost most of them. Only 157 vehicles were
+						recovered, with a loss rate of 76.5%. Faced with this situation, investors' full withdrawal of
+						capital resulted in the company having to face bankruptcy.<br><br>
+						<span class="background1"><b><i>"Professional manager" entrepreneurship that allows investors to
+									manage the accounts is not desirable </i></b></span><br>
+						The agreement signed by the founder of Cala and the investor is for the investor to manage the
+						finances, and the founder does nothing.
+						When the company is in crisis, investors can actually withdraw the full amount of investment
+						money from the user’s deposit pool, and remove the financial staff and customer service staff.
+						Such behavior not only directly leads to the bankruptcy of the company, but also transfers all
+						the risk To the users. It is the "professional manager" entrepreneurship that makes Cala fall
+						into such a passive position.
 					</div>
 
 				</div>
 				<div class='step' data-step='11'>
 					<div class="panel">
-						<h2 style="text-align: center;font-weight:800">酷骑单车</h2>
-						<h4 style="text-align: center;font-weight:600">上榜理由：存活379天 融资10亿元 日均烧钱263.85万 排名第一</h4>
+						<h2 style="text-align: center;font-weight:800">Kuqi Bike</h2>
+							<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Most-funded</h3>
+							<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 20px;">Survived for 379 days, raised 1
+								billion, spent an average of 2.63 million per day</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
-								<li class="block-item">2016.11 酷骑单车成立</li>
-								<li class="block-item">2017.9 因押金难退，多处运营单位与工商局失去联系等问题，部分地区已开始对酷骑单车进行清理。</li>
-								<li class="block-item">2017.12 中国消费者协会公开发文，称截至12月11日，仅针对酷骑单车的投诉就超过21万次，涉及金额10亿多元。</li>
-								<li class="block-item">2019.7 据用户投诉，在2019年7月12日，酷骑单车公布的显示退押金专线3个电话已经全部停机。</li>
+								<li class="block-item">11/2016 Kuqi was founded</li>
+								<li class="block-item">09/2017 Due to the fact that the deposit is difficult to refund,
+									and many operating units have lost contact with the Industrial and Commercial
+									Bureau, some areas have begun to clean up the their bikes.</li>
+								<li class="block-item">12/2017 The Chinese Consumers Association published a document
+									stating that as of December 11, there had been more than 210,000 complaints against
+									Kuqi alone, involving more than 1 billion yuan.</li>
+								<li class="block-item">07/2019 According to user complaints, on July 12, 2019, all three
+									telephone lines showing deposit refunds announced by Kuqi had been shut down.</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-
-						<span class="background1"><b><i>共享单车行业已到寒冬，烧多少钱也没法取暖 </i></b></span><br>
-						资金链断裂，成了压死酷骑单车的最后一根稻草。曾经的ofo，在行业竞争中，打败了多少共享单车创业公司和中小投资者，如今它也变得苟延残喘。<br>
-						酷骑单车与ofo一样，都面临着押金退不出来的困境。针对酷骑单车的投诉连续不断，涉案金额庞大，高达21亿元。作为受害者之一，以后类似的押金收取形式我们应当慎之又慎。
+						<span class="background1"><b><i>The bike-sharing industry has entered the cold winter, no natter how much money you burn </i></b></span><br>
+						The break of the capital chain became the last straw that crushed Kuqi. Once upon a time, ofo
+						has defeated many bike-sharing startups and small and medium-sized investors in competition in
+						the industry, and now it has become lingering.<br>
+						Like ofo, Kuqi is facing the dilemma that the deposit cannot be refunded. Complaints against
+						Kuqi continued, involving a huge amount of 2.1 billion yuan. As one of the victims, I advise
+						everyone that we should be cautious about similar deposit collection methods in the future.
 					</div>
 				</div>
 				<div class='step' data-step='12'>
 					<div class="panel">
-						<h2 style="text-align: center;font-weight:800">团贷网</h2>
-						<h4 style="text-align: center;font-weight:600">上榜理由：融资榜第一 24.75亿元</h4>
+						<h2 style="text-align: center;font-weight:800">TuanDai</h2>
+							<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Most deceptive</h3>
+							<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 20px;">Obtained 2.475 billion yuan
+								in financing but fled with the money</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
-								<li class="block-item">2012.7 团贷网上线</li>
-								<li class="block-item">2017.9 团贷网创始人兼CEO唐军成为新三板上市公司光影侠第一大股东和实际控制人。</li>
-								<li class="block-item">2016.3 平台累计交易量近160亿元，平台的投资注册用户超过240万人，为投资人赚取了超5.2亿元的收益。</li>
-								<li class="block-item">2019.3 东莞市公安局发布情况通报，团贷网实际控制人唐某、张某主动向东莞市公安局投案。</li>
+								<li class="block-item">07/2012 Tuandai.com put into use</li>
+								<li class="block-item">09/2017 Tang Jun, founder and CEO of Tuandai.com, became the
+									largest shareholder and actual controller of Guangyingxia, a listed company on the
+									NEEQ.</li>
+								<li class="block-item">03/2016 The cumulative trading volume of the platform is nearly
+									16 billion yuan, and the platform has more than 2.4 million registered investment
+									users, earning more than 520 million yuan in income for investors.</li>
+								<li class="block-item">03/2019 The Dongguan Public Security Bureau issued a notice that
+									Tang and Zhang, the actual controllers of the group loan network, took the
+									initiative to surrender to the Dongguan Public Security Bureau.</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						团贷网涉嫌非法吸收公众存款已被立案侦查，唐军作为实控人已经投案自首。一场游戏一场梦，一位年纪轻轻、身价上亿的八五后CEO，转眼发生了身份的巨变。
+						Tuandai.com has been filed for investigation on suspicion of illegally absorbing public
+						deposits, and Tang Jun has surrendered as the actual controller. It's like a dream of a young
+						CEO born in the 1985 with a net worth of over 100 million. His identity has changed dramatically
+						in a blink of an eye.
 						<br><br>
-						<span class="background1"><b><i>投资有风险，互联网金融更需谨慎 </i></b></span><br>
-						团贷网的“权威性”——推荐人分析的头头是道、别人投我也投的“从众思想”让很多民众入了“大坑”。高新手标年化收益率，更是让人心动。
-						所以要做投资，一定要深刻反思时时警惕做好风险预警。要甄别不可盲目跟投也不相信空头“承诺”，充分的了解深入的分析后在对其投资，如没办办法分辨，建议规避风险。
-						同时也应该推动互联网金融大数据与征信系统结合，建立更好的社会征信体系。
+						<span class="background1"><b><i>Investment is risky, and Internet finance needs more caution
+								</i></b></span><br>
+						The “authoritative” recommendation of Tuandai.com’s analysis is arrogant, and the “herd
+						thinking” that others voted for has caused many people to fall into the “big pit”. The
+						annualized rate of return for high novices is even more exciting.
+						Therefore, in order to invest, we must deeply reflect and be vigilant at all times to make risk
+						warnings. It is necessary to distinguish between blindly following investors and not believing
+						in the "promises" of shorts. After fully understanding and in-depth analysis, invest in them. If
+						there is no way to distinguish, it is recommended to avoid risks.
+						At the same time, it should also promote the integration of Internet financial big data and
+						credit reporting systems to establish a better social credit reporting system.
 					</div>
 
 				</div>
 
 				<div class='step' data-step='13'>
 					<div class="panel">
-						<h2 style="text-align: center;font-weight:800">快播</h2>
-						<h4 style="text-align: center;font-weight:600">上榜理由：IT桔子上香榜排名第一 705柱</h4>
+						<h2 style="text-align: center;font-weight:800">Qvod</h2>
+						<h3 style="font-family:'futura';text-align: center;color: #6dfffe;font-weight:600; padding-top: 6px;">Most popular</h3>
+							<h4 style="font-family:'futura';text-align: center;margin:0;line-height: 20px;">The most memorable company</h4>
 						<div style="position:relative;">
 							<ul class="timeline">
-								<li class="block-item">2007.12 深圳快播成立</li>
-								<li class="block-item">2009.1 深圳快播获得软银赛富数百万美元A轮投资</li>
-								<li class="block-item">2011 快播成为了全中国市场占有量第一的播放器 </li>
+								<li class="block-item">12/2007 Shenzhen QVOD technology company was founded</li>
+								<li class="block-item">01/2009 QVOD received millions of dollars in Series A investment
+									from Softbank SAIF</li>
+								<li class="block-item">2011 Qvod has become the player with the largest market share in
+									China </li>
 								</li>
-								<li class="block-item">2016.9 快播公司及主管人员涉嫌传播淫秽物品牟利被审理，快播王欣获刑3年6个月</li>
+								<li class="block-item">09/2016 Gvod company and its executives were tried on suspicion
+									of spreading obscene materials for profit, the founder Wang Xin was sentenced to 3 years and 6
+									months in prison</li>
 								<!-- <li class="block-item">2007.12 深圳快播成立</li> -->
-								<li class="block-item">2018.9 深圳中院裁定快播破产清算,即日生效</li>
+								<li class="block-item">09/2018 Shenzhen Intermediate People's Court ruled that Qvod was
+									liquidated, effective today</li>
 							</ul>
 						</div>
 					</div>
 					<div class="panel">
-						快播曾被喻为“宅男的青春”。所以快播在上香榜上排名最高，也是情有可原。
-						当年，王欣在辩护时提出的“技术无罪”论得到了绝大多数网友的认同，但是也并没有改变结局，快播还是败诉了，王欣被判入狱3年6个月。
-						时过境迁，现在的我们都已经承认一个公司有义务对用户的行为负责。正如滴滴的顺风车杀人案件，滴滴也必须站出来挨打。所以快播的倒闭虽然令人惋惜，但有其历史必然性。
-
+						Qvod was once called "the youth of an otaku". It is the excuseable that Qvod is most remembered
+						by people.
+						Back then, Qvod'founder Wang Xin's "technological innocence" theory put forward in his defense was recognized
+						by most netizens, but it did not change the outcome. Qvod still lost the case and Wang Xin was
+						sentenced to 3 years and 6 months in prison.
+						Times have changed, and now we have all admitted that a company is obliged to be responsible for
+						the actions of users. Just like China’s ride-hailing giant Didi Chuxing must stand up and be
+						condemned for the murder case while using Didi’s car-pooling service. So although the collapse of Qvod is regrettable, it has its historical inevitability.
 					</div>
-
-
 				</div>
 				<div class='step' data-step='14' id="last-child">
 					<div class="blank"></div>
@@ -414,10 +516,12 @@
 		</section>
 
 		<section id='outro' style="text-align: center; position: relative;">
-			<img style="position: absolute;width: 20%;margin:0 auto;left:0;right:0;top:20%" src="img/ghost.gif">
+			<img style="position: absolute;width: 15%;margin:0 auto;left:0;right:0;top:15%" src="img/ghost.gif">
 			<!-- <div style="height:100vh;background-image: url(img/outro.png);">
 			</div> -->
 			<img style="height:100vh;margin:0 auto;" src="img/outro.png">
+			<p style="font-size:12px;position: absolute;bottom: 10%;margin:0 auto;left:0;right:0;">Data Source: IT
+				Orange<span><a href="https://www.itjuzi.com/deathCompany" target="_blank"> LINK</a></span></p>
 		</section>
 	</main>
 
