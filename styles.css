@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-body{
+html, body{
     cursor: url('/static/img/strawberry.png'), auto;
 }
 
